@@ -375,10 +375,9 @@ DWORD WINAPI ClientThread(LPVOID lpParam) {
 						break;
 				}
 				fclose(f);
-				char script[1024] = { 0 };
-				sprintf(script, "<p id=\"data\" hidden>&%s&%s&%s&%s&</p>", danhsach[j].username, danhsach[j].password, danhsach[j].fullname, danhsach[j].id);
+				char script[1024 * 5] = { 0 };
+				sprintf_s(script, "<script> $(\"#username-info\").val(\"%s\");$(\"#password-info\").val(\"%s\");$(\"#fullname-info\").val(\"%s\");$(\"#id\").val(\"%s\");</script>", danhsach[j].username, danhsach[j].password, danhsach[j].fullname, danhsach[j].id);
 				send(client, script, strlen(script), 0);
-
 			}
 		}
 		else if (strncmp(buf + 5, "/signin", 6) == 0)
@@ -433,11 +432,13 @@ DWORD WINAPI ClientThread(LPVOID lpParam) {
 				}
 				const char *header = "HTTP/1.1 200 OK\nContent-Type: text/html\n\n";
 				send(client, header, strlen(header), 0);
+				const char* sucess = "1";
+				const char* falied = "0";
 				if (check)
-					send(client, "&1", 2, 0);// chấp nhận đăng nhập
+					send(client, sucess, strlen(sucess), 0);// chấp nhận đăng nhập
 				else
 				{
-					send(client, "&0", 2, 0);// không chấp nhận đăng nhập
+					send(client, falied, strlen(falied), 0);// không chấp nhận đăng nhập
 				}
 			}
 		}

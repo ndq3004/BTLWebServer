@@ -1,21 +1,21 @@
 ﻿  WebServerLTM.cpp
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(29): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(35): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(205): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(213): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(225): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(226): warning C4553: '==': result of expression not used; did you intend '='?
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(311): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(318): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(395): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(402): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(455): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(462): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(472): warning C4018: '<': signed/unsigned mismatch
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(144): warning C4101: 'tmp': unreferenced local variable
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(229): warning C4101: 'file': unreferenced local variable
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(229): warning C4101: 'buf_search': unreferenced local variable
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(344): warning C4101: 'tmp': unreferenced local variable
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(366): warning C4101: 'tmp': unreferenced local variable
-d:\cntt\networkprogramming\btl\webserverltm\webserverltm\webserverltm.cpp(513): warning C4715: 'ClientThread': not all control paths return a value
-  WebServerLTM.vcxproj -> D:\CNTT\NetworkProgramming\BTL\WebServerLTM\Debug\WebServerLTM.exe
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(205): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(213): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(225): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(226): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(311): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(318): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(394): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(401): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(456): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(463): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(473): warning C4018: '<': signed/unsigned mismatch
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(144): warning C4101: 'tmp': unreferenced local variable
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(229): warning C4101: 'file': unreferenced local variable
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(229): warning C4101: 'buf_search': unreferenced local variable
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(344): warning C4101: 'tmp': unreferenced local variable
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(366): warning C4101: 'tmp': unreferenced local variable
+c:\users\enter c\desktop\btlwebserver\webserverltm\webserverltm.cpp(514): warning C4715: 'ClientThread': not all control paths return a value
+  WebServerLTM.vcxproj -> C:\Users\Enter C\Desktop\BTLWebServer\Debug\WebServerLTM.exe

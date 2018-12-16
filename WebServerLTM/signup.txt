@@ -95,11 +95,6 @@
                       //  $("#main").html("");
 					     $("#content").html("");
                          $("#content").html(data2);
-                         var temp=data2.split("&");
-                         $("#username-info").val(temp[1]);
-                         $("#password-info").val(temp[2]);
-                         $("#fullname-info").val(temp[3]);
-                         $("#id").val(temp[4]);
                  });
                                                    }	
 				})	

@@ -87,7 +87,6 @@
                    
             
         </div>
-        <button style="width: 100px;height: 100px" onclick="getInfo()"></button>
     </body>
     <script>
     		function getIPAddr(){
@@ -114,11 +113,6 @@
                  function(data,status){
                       //  $("#main").html("");
                          $("#content").html(data);
-                         var temp=data.split("&");
-                         $("#username-info").val(temp[1]);
-                         $("#password-info").val(temp[2]);
-                         $("#fullname-info").val(temp[3]);
-                         $("#id").val(temp[4]);
                  });
          })
                  function singup(){
@@ -130,20 +124,14 @@
                  $.post("/signin",
                  {"username":$("#username").val(), "password":$("#password").val()},
                  function(data,status){
-                        var dulieu = data.split("&")
-                         if(dulieu[1]=="0"){//đăng nhập không thành cồn
+                      //  var dulieu = data.split("&")
+                         if(data=="0"){//đăng nhập không thành công
                          $("#error").html("Sai ten tai khoan hoac mat khau"); 
                          $("#error").css({"color":"red","font-size":"15px"});
-                         }else if(dulieu[1]=="1"){//đăng nhập thành công với người dùng ko có quyền admin
+                         }else if(data=="1"){//đăng nhập thành công với người dùng ko có quyền admin
 	                         $.post("/user", {"username":$("#username").val()},function(data2,status1){
 	                         $("#content").html("");
 	                         $("#content").html(data2);
-	                         var temp=data2.split("&");
-	                         $("#username-info").val(temp[1]);
-	                         $("#password-info").val(temp[2]);
-	                         $("#fullname-info").val(temp[3]);
-	                         $("#id").val(temp[4]);
-	                         //getInfo(temp[1]);
                          });
                          }else{// admin đăng nhập
              	            $("#left").html("");
