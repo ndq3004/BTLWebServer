@@ -1,0 +1,59 @@
+                 <style>
+
+#signin{
+    width:350px;
+    height:600px;
+    background-color:#1860d3;
+    padding:20px;
+    border:1px solid #1860d3;
+    border-radius:5px;
+    margin:0px auto;
+    text-align:left; 
+    font-weight:500px;
+    color:white;
+}
+#signin p{
+    text-align:center;
+    font-weight:700px;
+    font-size:1.7em;
+    color:#fff;
+    margin-bottom:25px;
+}
+#signin input{
+    border-radius:6px;
+    background-color:#07337a;
+    color:#fff;
+    padding:16px;
+    margin:0px auto;
+    margin-bottom:25px;
+    width:300px;
+    border:1px solid #07337a;
+    font-size:1.2em;
+}
+#signin button{
+    border-radius:6px;
+    color:#07337a;
+    background-color:#c3d0e4;
+    padding:10px;
+    width:330px;
+    font-size:1.5em;
+    font-weight: 700px;
+    margin-bottom:20px;
+    text-align:center;
+}
+</style>
+ <div id="in-fo">
+
+       <div id="signin">
+        <p>Information</p>
+        User: <input type="text" id="username-info" placeholder="username">
+        Pass: <input type="password" id="password-info" placeholder="password">
+        Full name:<input type="text" id="fullname-info" placeholder="Enter full name">
+        ID:<input type="text" id="id" placeholder="Enter IDs">
+        <button id="submit" onclick="update()">Update</button>
+      <div id="notice"></div>
+    </div>
+    </div>
+
+
+	

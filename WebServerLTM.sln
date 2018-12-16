@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WebServerLTM", "WebServerLTM\WebServerLTM.vcxproj", "{23FAB39C-0D0E-449E-9108-74527E5A541D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Debug|x64.ActiveCfg = Debug|x64
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Debug|x64.Build.0 = Debug|x64
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Debug|x86.ActiveCfg = Debug|Win32
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Debug|x86.Build.0 = Debug|Win32
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Release|x64.ActiveCfg = Release|x64
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Release|x64.Build.0 = Release|x64
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Release|x86.ActiveCfg = Release|Win32
+		{23FAB39C-0D0E-449E-9108-74527E5A541D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B3C28DE-6E5E-47ED-B05A-676FDD8D2817}
+	EndGlobalSection
+EndGlobal

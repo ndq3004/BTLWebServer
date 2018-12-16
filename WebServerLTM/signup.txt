@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<style>
+#title{
+    text-align:center;
+    margin:0px auto;
+    padding-top:50px;
+    width:600px;
+    height:80px;
+    background-color:#679bef;
+    border:1px solid #164a9e;
+    border-radius :5px;
+    box-shadow: 5px 5px 20px #888888;
+    margin-bottom:50px;
+    font-size: 1.5em;
+    font-weght:bold;
+}
+#signin{
+    width:320px;
+    height:500px;
+    background-color:#1860d3;
+    padding:20px;
+    border:1px solid #1860d3;
+    border-radius:5px;
+    margin:0px auto;
+}
+#signin p{
+    text-align:center;
+    font-weight:700px;
+    font-size:1.7em;
+    color:#fff;
+    margin-bottom:25px;
+}
+#signin input{
+    border-radius:6px;
+    background-color:#07337a;
+    color:#fff;
+    padding:10px;
+    margin:0px auto;
+    margin-bottom:25px;
+    width:300px;
+    border:1px solid #07337a;
+    font-size:1em;
+}
+#signin button{
+    border-radius:6px;
+    color:#07337a;
+    background-color:#c3d0e4;
+    padding:10px;
+    width:300px;
+    font-size:1.3em;
+    font-weight: 700px;
+    margin-bottom:20px;
+}
+</style>
+<body>
+    <div id="title">WEBSERVER BY C/C++</div>
+	<div id="content">
+    <div id="signin">
+        <p>Webserver</p>
+        <input type="text" name="username" id="username" placeholder="Enter username">
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <input type="text" name="fullname" id="fullname" placeholder="Enter fullname">
+        <input type="text" name="id" id="id" placeholder="Enter ID">
+        <button id="submit" onclick="get()">Sign up</button>
+        <a href="/xinchao"><button >Cancel</button></a>
+        <p id="err"><p>
+    </div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+		function get(){
+			if(!$("#username").val()||!$("#password").val()||!$("#fullname").val()||!$("#id").val()){
+                                     $("#err").html("Thieu du lieu"); 
+					$("#err").css({"color":"red","font-size":"15px"});
+                              }else{
+			$.post("/signup",{"username":$("#username").val(),"password":$("#password").val(),"fullname":$("#fullname").val(),"id":$("#id").val()},
+					function(data){ 
+					if(data=="0"){
+                                             $("#err").html("Ten tai khoan da ton tai"); 
+					    $("#err").css({"color":"red","font-size":"15px"});
+                                            }else{
+                                                 $("#err").html("dang ki thanh cong"); 
+					  $("#err").css({"color":"blue","font-size":"15px"});
+					 $.post("/user",
+                 {"username": $("#username").val()},
+                 function(data2,status){
+                      //  $("#main").html("");
+					     $("#content").html("");
+                         $("#content").html(data2);
+                         var temp=data2.split("&");
+                         $("#username-info").val(temp[1]);
+                         $("#password-info").val(temp[2]);
+                         $("#fullname-info").val(temp[3]);
+                         $("#id").val(temp[4]);
+                 });
+                                                   }	
+				})	
+			}
+			}
+		             function update(){
+                    if(!$("#username-info").val()||!$("#password-info").val()||!$("#fullname-info").val()||!$("#id").val()){
+                                          $("#notice").html("Thieu du lieu"); 
+                         $("#notice").css({"color":"red","font-size":"15px"});
+                                   }else{
+                    $.post("/update",
+                 {"username":$("#username-info").val(), "password":$("#password-info").val(),"fullname":$("#fullname-info").val(), "id":$("#id").val()},
+                 function(data,status){
+                 //var dulieu = data.split("&")
+                    if(data=="1")
+                       { 
+                        $("#notice").html("update successfull!!");
+                        $("#notice").css("color","white");
+                        }else{
+                          $("#notice").html("update failed because unknown user!!");
+                        $("#notice").css("color","red");
+                        }
+                 });
+     }
+                                 };
+	</script>
+	</body>
+</html>
